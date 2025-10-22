@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_main"
+        android:icon="@drawable/ic_baseline_replay_circle_filled_24"
+        android:title="@string/title_pause" />
+
+    <item
+        android:id="@+id/navigation_stats"
+        android:icon="@drawable/chart"
+        android:title="@string/title_stats" />
+
+
+</menu>

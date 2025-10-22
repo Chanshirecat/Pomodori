@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Pomodori</string>
+    <string name="title_activity_navigation">navigation_activity</string>
+    <string name="title_pause">Switch mode</string>
+    <string name="title_stats">Stats</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="about">Pomodoro is a time management method to break work into intervals. Typically those phases are 25 minutes long separated by short breaks. Each interval is known as a Pomodoro. We hope you have fun using our app to manage your time.</string>
+</resources>
+

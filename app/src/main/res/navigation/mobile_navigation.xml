@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_main">
+
+    <fragment
+        android:id="@+id/focusTimeFragment"
+        android:name="com.example.pomodori.FocusTimeFragment"
+        android:label="FocusTimeFragment">
+        <action
+            android:id="@+id/action_focusTimeFragment_to_pauseTimeFragment"
+            app:destination="@id/pauseTimeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pauseTimeFragment"
+        android:name="com.example.pomodori.PauseTimeFragment"
+        android:label="PauseTimeFragment">
+        <action
+            android:id="@+id/action_pauseTimeFragment_to_focusTimeFragment"
+            app:destination="@id/focusTimeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editStatsFragment"
+        android:name="com.example.pomodori.EditStatsFragment"
+        android:label="EditStatsFragment" >
+        <action
+            android:id="@+id/action_editStatsFragment_to_statViewFragment"
+            app:destination="@id/statViewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/statViewFragment"
+        android:name="com.example.pomodori.StatViewFragment"
+        android:label="fragment_stat_view"
+        tools:layout="@layout/fragment_stat_view" >
+        <action
+            android:id="@+id/action_statViewFragment_to_editStatsFragment"
+            app:destination="@id/editStatsFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/statsActivity"
+        android:name="com.example.pomodori.StatsActivity"
+        android:label="activity_stats"
+        tools:layout="@layout/activity_stats" />
+
+</navigation>
